@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshua Imanuel - Portfolio</title>
+
+    <!-- Framework & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text-gray-300">
+    <!-- Header & Navigation -->
+    <header
+      class="bg-[#191919]/80 backdrop-blur-lg sticky top-0 z-50 shadow-md shadow-black/20"
+    >
+      <nav
+        class="container mx-auto px-6 py-5 flex justify-between items-center"
+      >
+        <a href="#" class="text-3xl font-bold text-white"
+          >Joshua<span class="accent-color">.</span></a
+        >
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="#home" class="nav-link text-white font-medium">Home</a>
+          <a href="#about" class="nav-link text-white font-medium">About</a>
+          <a href="#services" class="nav-link text-white font-medium"
+            >Services</a
+          >
+          <a href="#projects" class="nav-link text-white font-medium"
+            >Projects</a
+          >
+          <a href="#certificates" class="nav-link text-white font-medium"
+            >Certifications</a
+          >
+          <a href="#contact" class="nav-link text-white font-medium">Contact</a>
+        </div>
+        <button id="mobile-menu-button" class="md:hidden text-white">
+          <i data-feather="menu" class="w-7 h-7"></i>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+        <a href="#home" class="block py-2 text-white hover:accent-color"
+          >Home</a
+        >
+        <a href="#about" class="block py-2 text-white hover:accent-color"
+          >About</a
+        >
+        <a href="#services" class="block py-2 text-white hover:accent-color"
+          >Services</a
+        >
+        <a href="#projects" class="block py-2 text-white hover:accent-color"
+          >Projects</a
+        >
+        <a href="#certificates" class="block py-2 text-white hover:accent-color"
+          >Certifications</a
+        >
+        <a href="#contact" class="block py-2 text-white hover:accent-color"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-bg min-h-screen flex items-center">
+        <div
+          class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between"
+        >
+          <div class="md:w-3/5 text-center md:text-left mt-10 md:mt-0">
+            <span class="text-lg font-medium">WELCOME TO MY PORTFOLIO</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-white my-4">
+              Hi, I'm Joshua Imanuel
+            </h1>
+            <h2 class="text-2xl md:text-4xl font-semibold">
+              a <span id="typed-text" class="accent-color"></span>
+            </h2>
+            <p class="max-w-xl mt-6 text-gray-400">
+              A Software Engineering student from BINUS University with a
+              passion for creating innovative and efficient software solutions.
+            </p>
+            <div class="mt-8 flex justify-center md:justify-start space-x-4">
+              <a
+                href="https://www.linkedin.com/in/joshua-asaf-imanuel/"
+                target="_blank"
+                class="w-12 h-12 flex items-center justify-center rounded-md bg-[#212121] hover:bg-accent transition duration-300"
+                ><i data-feather="linkedin" class="text-white"></i
+              ></a>
+              <a
+                href="https://github.com/joshuaimanuel1"
+                target="_blank"
+                class="w-12 h-12 flex items-center justify-center rounded-md bg-[#212121] hover:bg-accent transition duration-300"
+                ><i data-feather="github" class="text-white"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/joshuaimanuel__/"
+                target="_blank"
+                class="w-12 h-12 flex items-center justify-center rounded-md bg-[#212121] hover:bg-accent transition duration-300"
+                ><i data-feather="instagram" class="text-white"></i
+              ></a>
+            </div>
+          </div>
+          <div class="md:w-2/5 flex justify-center">
+            <div
+              class="w-64 h-64 md:w-96 md:h-96 rounded-full bg-[#212121] p-2 shadow-2xl shadow-black/50"
+            >
+              <img
+                src="assets/profile.jpg"
+                alt="Joshua Imanuel Profile Picture"
+                class="w-full h-full rounded-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-20 md:py-28 bg-[#191919]">
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-2 text-white"
+          >
+            About Me
+          </h2>
+          <p class="text-center accent-color mb-12">Get to know me</p>
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3" data-aos="fade-right">
+              <img
+                src="assets/profile.jpg"
+                alt="Joshua Imanuel"
+                class="rounded-lg w-full"
+              />
+            </div>
+            <div class="md:w-2/3" data-aos="fade-left">
+              <h3 class="text-2xl font-semibold text-white mb-4">
+                I'm a Software Engineering student at BINUS University.
+              </h3>
+              <p class="text-gray-400 leading-relaxed">
+                I have a deep passion for web development, front-end
+                applications, and UI/UX design. I believe that technology and
+                design should go hand-in-hand to create digital experiences that
+                are not only functional but also aesthetically pleasing. Through
+                my involvement in various organizations and projects, I have
+                developed strong teamwork, communication, and problem-solving
+                skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-20 md:py-28">
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-2 text-white"
+          >
+            Services
+          </h2>
+          <p class="text-center accent-color mb-16">What I Do</p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card p-8 text-center" data-aos="fade-up">
+              <i
+                data-feather="code"
+                class="w-16 h-16 mx-auto mb-4 accent-color"
+              ></i>
+              <h3 class="text-xl font-bold text-white mb-2">Web Development</h3>
+              <p class="text-gray-400">
+                Building responsive and functional web applications using modern
+                technologies.
+              </p>
+            </div>
+            <div
+              class="card p-8 text-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <i
+                data-feather="smartphone"
+                class="w-16 h-16 mx-auto mb-4 accent-color"
+              ></i>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Software Engineering
+              </h3>
+              <p class="text-gray-400">
+                Designing and developing reliable software solutions with solid
+                engineering principles.
+              </p>
+            </div>
+            <div
+              class="card p-8 text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <i
+                data-feather="figma"
+                class="w-16 h-16 mx-auto mb-4 accent-color"
+              ></i>
+              <h3 class="text-xl font-bold text-white mb-2">UI/UX Design</h3>
+              <p class="text-gray-400">
+                Creating intuitive and engaging user interfaces for the best
+                user experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-20 md:py-28 bg-[#191919]">
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-2 text-white"
+          >
+            Portfolio
+          </h2>
+          <p class="text-center accent-color mb-16">My Recent Projects</p>
+          <div
+            id="project-list"
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <!-- Eco-Hub Project Card -->
+            <div
+              class="card p-6 flex flex-col cursor-pointer"
+              onclick="openProjectModal('ecohub-modal')"
+              data-aos="fade-up"
+            >
+              <h3 class="text-xl font-bold text-white mb-2">Eco-Hub</h3>
+              <p class="text-gray-400 mb-4 flex-grow">
+                An innovative platform connecting users with waste banks for a
+                sustainable recycling ecosystem.
+              </p>
+              <div class="mt-auto">
+                <span
+                  class="font-semibold accent-color hover:text-red-700 transition duration-300 inline-flex items-center"
+                >
+                  View Details
+                  <i data-feather="arrow-right" class="w-4 h-4 ml-1"></i>
+                </span>
+              </div>
+            </div>
+            <!-- MonneCare Project Card -->
+            <div
+              class="card p-6 flex flex-col cursor-pointer"
+              onclick="openProjectModal('monnecare-modal')"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h3 class="text-xl font-bold text-white mb-2">MonneCare</h3>
+              <p class="text-gray-400 mb-4 flex-grow">
+                A digital pharmacy platform for easy and secure online drug
+                consultation and purchasing.
+              </p>
+              <div class="mt-auto">
+                <span
+                  class="font-semibold accent-color hover:text-red-700 transition duration-300 inline-flex items-center"
+                >
+                  View Details
+                  <i data-feather="arrow-right" class="w-4 h-4 ml-1"></i>
+                </span>
+              </div>
+            </div>
+            <!-- Projects from GitHub will be loaded here -->
+          </div>
+          <div class="text-center mt-12" data-aos="fade-up">
+            <a
+              href="https://github.com/joshuaimanuel1"
+              target="_blank"
+              class="bg-accent text-white px-8 py-3 rounded-md hover:bg-red-700 transition duration-300 inline-flex items-center"
+            >
+              <i data-feather="github" class="mr-2"></i> See More on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates Section -->
+      <section id="certificates" class="py-20 md:py-28">
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-2 text-white"
+          >
+            Certifications
+          </h2>
+          <p class="text-center accent-color mb-16">My Achievements</p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="card p-6 flex flex-col cursor-pointer"
+              onclick="openModal('assets/ldkp.jpeg')"
+              data-aos="fade-up"
+            >
+              <h3 class="text-lg font-bold text-white mb-2">
+                Participant LDKP 2024
+              </h3>
+              <p class="text-gray-400 text-sm flex-grow">
+                Participation in Leadership Training by HIMTI.
+              </p>
+            </div>
+            <div
+              class="card p-6 flex flex-col cursor-pointer"
+              onclick="openModal('assets/digifest.jpeg')"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h3 class="text-lg font-bold text-white mb-2">
+                Event Staff Digifest
+              </h3>
+              <p class="text-gray-400 text-sm flex-grow">
+                Committee for an Augmented Reality competition by HIMTI.
+              </p>
+            </div>
+            <div
+              class="card p-6 flex flex-col cursor-pointer"
+              onclick="openModal('assets/BIC.jpeg')"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3 class="text-lg font-bold text-white mb-2">
+                Committee Internal Cup
+              </h3>
+              <p class="text-gray-400 text-sm flex-grow">
+                Committee for a futsal competition by BINUS Futsal Club.
+              </p>
+            </div>
+            <div
+              class="card p-6 flex flex-col cursor-pointer"
+              onclick="openModal('assets/iot.jpeg')"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h3 class="text-lg font-bold text-white mb-2">IoT Training</h3>
+              <p class="text-gray-400 text-sm flex-grow">
+                Participant in an IoT basics training by Dentech Corporation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 md:py-28 bg-[#191919]">
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-2 text-white"
+          >
+            Contact Me
+          </h2>
+          <p class="text-center accent-color mb-16">Let's Get in Touch</p>
+          <div class="max-w-3xl mx-auto">
+            <form
+              action="https://formspree.io/f/mrbajlzy"
+              method="POST"
+              class="space-y-6"
+              data-aos="fade-up"
+            >
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block mb-2 text-sm font-medium text-gray-400"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-input w-full"
+                    placeholder="Your Full Name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-gray-400"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input w-full"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block mb-2 text-sm font-medium text-gray-400"
+                  >Message</label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="6"
+                  class="form-input w-full"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="bg-accent text-white font-semibold px-10 py-4 rounded-md hover:bg-red-700 transition duration-300 inline-flex items-center"
+                >
+                  Send Message
+                  <i data-feather="send" class="w-5 h-5 ml-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6">
+      <div class="container mx-auto px-6 text-center text-gray-500">
+        <p>
+          &copy; <span id="year"></span> Joshua Asaf Imanuel. Designed & Built
+          with <span class="accent-color">❤</span>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="modal-backdrop" onclick="closeModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <img id="modal-image" src="" alt="Certificate" />
+      </div>
+    </div>
+
+    <!-- MonneCare Project Modal -->
+    <div
+      id="monnecare-modal"
+      class="modal-backdrop"
+      onclick="closeProjectModal('monnecare-modal')"
+    >
+      <div class="modal-content max-w-4xl">
+        <div class="flex justify-start items-center mb-6">
+          <button
+            onclick="closeProjectModal('monnecare-modal')"
+            class="text-gray-400 hover:text-white flex items-center"
+          >
+            <i data-feather="arrow-left" class="w-5 h-5"></i>
+            <span class="ml-2">Back To Projects</span>
+          </button>
+        </div>
+        <h3 class="text-3xl font-bold text-white mb-6">MonneCare</h3>
+        <img
+          src="assets/monnecare-hero.png"
+          alt="MonneCare Homepage"
+          class="w-full rounded-lg shadow-lg mb-8"
+        />
+
+        <h4 class="text-2xl font-semibold text-white mb-3">About</h4>
+        <p class="text-gray-400 mb-8 leading-relaxed">
+          MonneCare is a digital pharmacy platform concept designed to provide
+          easy access to healthcare. Users can search for medicines, consult
+          with pharmacists, and manage prescription reminders, all in one
+          integrated, user-friendly, and secure platform.
+        </p>
+
+        <h4 class="text-2xl font-semibold text-white mb-4">Gallery</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <img
+            src="assets/monnecare-login.png"
+            alt="MonneCare Login Page"
+            class="rounded-lg"
+          />
+          <img
+            src="assets/monnecare-daftar.png"
+            alt="MonneCare Sign Up Page"
+            class="rounded-lg"
+          />
+          <img
+            src="assets/monnecare-konsultasi.png"
+            alt="MonneCare Consultation Page"
+            class="rounded-lg"
+          />
+          <img
+            src="assets/monnecare-category.png"
+            alt="MonneCare Category Page"
+            class="rounded-lg"
+          />
+          <img
+            src="assets/monnecare-product.png"
+            alt="MonneCare Product Page"
+            class="rounded-lg"
+          />
+          <img
+            src="assets/monnecare-cart.png"
+            alt="MonneCare Shopping Cart"
+            class="rounded-lg"
+          />
+        </div>
+
+        <h4 class="text-2xl font-semibold text-white mb-3">Technologies</h4>
+        <div class="flex flex-wrap gap-3 mb-8">
+          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
+            >HTML</span
+          >
+          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
+            >CSS</span
+          >
+          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
+            >JavaScript</span
+          >
+          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
+            >Figma</span
+          >
+        </div>
+
+        <div class="space-y-4">
+          <div>
+            <a
+              href="https://joshuaimanuel1.github.io/monnecare-app/"
+              target="_blank"
+              class="flex items-center text-gray-300 hover:accent-color transition-colors"
+            >
+              <i data-feather="globe" class="w-5 h-5 mr-3"></i>
+              <span>monnecare.vercel.app</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/joshuaimanuel1/monnecare-app"
+              target="_blank"
+              class="flex items-center text-gray-300 hover:accent-color transition-colors"
+            >
+              <i data-feather="github" class="w-5 h-5 mr-3"></i>
+              <span>github.com/joshuaimanuel1/monnecare-app</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eco-Hub Project Modal -->
+    <div
+      id="ecohub-modal"
+      class="modal-backdrop"
+      onclick="closeProjectModal('ecohub-modal')"
+    >
+      <div class="modal-content max-w-4xl">
+        <div class="flex justify-start items-center mb-6">
+          <button
+            onclick="closeProjectModal('ecohub-modal')"
+            class="text-gray-400 hover:text-white flex items-center"
+          >
+            <i data-feather="arrow-left" class="w-5 h-5"></i>
+            <span class="ml-2">Back To Projects</span>
+          </button>
+        </div>
+        <h3 class="text-3xl font-bold text-white mb-6">Eco-Hub</h3>
+        <img
+          src="assets/eco-hub-hero.png"
+          alt="Eco-Hub Homepage"
+          class="w-full rounded-lg shadow-lg mb-8"
+        />
+
+        <h4 class="text-2xl font-semibold text-white mb-3">About</h4>
+        <p class="text-gray-400 mb-8 leading-relaxed">
+          Eco-Hub is an innovative platform that connects you with waste banks,
+          providing incentives and creating a sustainable recycling ecosystem.
+          Turn your trash into digital blessings with ease.
+        </p>
+
+        <h4 class="text-2xl font-semibold text-white mb-4">Gallery</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <img
+            src="assets/eco-hub-dashboard.png"
+            alt="Eco-Hub User Dashboard"
+            class="rounded-lg"
+          />
+          <img
+            src="assets/eco-hub-profil.png"
+            alt="Eco-Hub User Profile"
+            class="rounded-lg"
+          />
+          <img
+            src="assets/eco-hub-map.png"
+            alt="Eco-Hub Waste Bank Map"
+            class="rounded-lg"
+          />
+          <img
+            src="assets/eco-hub-identifikasi.png"
+            alt="Eco-Hub Waste Identification"
+            class="rounded-lg"
+          />
+          <img
+            src="assets/eco-hub-login.png"
+            alt="Eco-Hub Login Page"
+            class="rounded-lg"
+          />
+          <img
+            src="assets/eco-hub-register.png"
+            alt="Eco-Hub Registration Page"
+            class="rounded-lg"
+          />
+        </div>
+
+        <h4 class="text-2xl font-semibold text-white mb-3">Technologies</h4>
+        <div class="flex flex-wrap gap-3 mb-8">
+          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
+            >HTML</span
+          >
+          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
+            >CSS</span
+          >
+          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
+            >JavaScript</span
+          >
+          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
+            >Figma</span
+          >
+        </div>
+
+        <div class="space-y-4">
+          <div>
+            <a
+              href="#"
+              target="_blank"
+              class="flex items-center text-gray-300 hover:accent-color transition-colors"
+            >
+              <i data-feather="globe" class="w-5 h-5 mr-3"></i>
+              <span>Website (Coming Soon)</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/joshuaimanuel1/Eco-Hub"
+              target="_blank"
+              class="flex items-center text-gray-300 hover:accent-color transition-colors"
+            >
+              <i data-feather="github" class="w-5 h-5 mr-3"></i>
+              <span>github.com/joshuaimanuel1/Eco-Hub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
