@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joshua Imanuel - Portfolio</title>
-
-    <!-- Framework & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,18 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Libraries -->
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="text-gray-300">
-    <!-- Header & Navigation -->
     <header
       class="bg-[#191919]/80 backdrop-blur-lg sticky top-0 z-50 shadow-md shadow-black/20"
     >
@@ -37,6 +30,9 @@
         <div class="hidden md:flex space-x-8 items-center">
           <a href="#home" class="nav-link text-white font-medium">Home</a>
           <a href="#about" class="nav-link text-white font-medium">About</a>
+          <a href="#why-academy" class="nav-link text-white font-medium"
+            >Why Academy</a
+          >
           <a href="#services" class="nav-link text-white font-medium"
             >Services</a
           >
@@ -52,13 +48,15 @@
           <i data-feather="menu" class="w-7 h-7"></i>
         </button>
       </nav>
-      <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
         <a href="#home" class="block py-2 text-white hover:accent-color"
           >Home</a
         >
         <a href="#about" class="block py-2 text-white hover:accent-color"
           >About</a
+        >
+        <a href="#why-academy" class="block py-2 text-white hover:accent-color"
+          >Why Academy</a
         >
         <a href="#services" class="block py-2 text-white hover:accent-color"
           >Services</a
@@ -76,7 +74,6 @@
     </header>
 
     <main>
-      <!-- Hero Section -->
       <section id="home" class="hero-bg min-h-screen flex items-center">
         <div
           class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between"
@@ -84,14 +81,15 @@
           <div class="md:w-3/5 text-center md:text-left mt-10 md:mt-0">
             <span class="text-lg font-medium">WELCOME TO MY PORTFOLIO</span>
             <h1 class="text-4xl md:text-6xl font-bold text-white my-4">
-              Hi, I'm Joshua Imanuel
+              I'm Joshua Imanuel
             </h1>
             <h2 class="text-2xl md:text-4xl font-semibold">
-              a <span id="typed-text" class="accent-color"></span>
+              I am a <span id="typed-text" class="accent-color"></span>
             </h2>
             <p class="max-w-xl mt-6 text-gray-400">
-              A Software Engineering student from BINUS University with a
-              passion for creating innovative and efficient software solutions.
+              On a journey to explore the intersection of technology and design,
+              transforming complex problems into elegant and intuitive
+              solutions.
             </p>
             <div class="mt-8 flex justify-center md:justify-start space-x-4">
               <a
@@ -128,15 +126,14 @@
         </div>
       </section>
 
-      <!-- About Section -->
       <section id="about" class="py-20 md:py-28 bg-[#191919]">
         <div class="container mx-auto px-6">
           <h2
             class="text-3xl md:text-4xl font-bold text-center mb-2 text-white"
           >
-            About Me
+            My Story
           </h2>
-          <p class="text-center accent-color mb-12">Get to know me</p>
+          <p class="text-center accent-color mb-12">Beyond the Code</p>
           <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/3" data-aos="fade-right">
               <img
@@ -146,25 +143,74 @@
               />
             </div>
             <div class="md:w-2/3" data-aos="fade-left">
-              <h3 class="text-2xl font-semibold text-white mb-4">
-                I'm a Software Engineering student at BINUS University.
-              </h3>
+              <p class="text-gray-300 leading-relaxed mb-4 text-lg">
+                My journey into technology was sparked by a simple curiosity:
+                how can we make complex systems feel simple and natural to use?
+                As a Computer Science student at BINUS University, I've
+                channeled this curiosity into a passion for software
+                engineering, web development, and human-centered design.
+              </p>
+              <p class="text-gray-400 leading-relaxed mb-4">
+                I see coding not just as a technical skill, but as a creative
+                medium. This interdisciplinary mindset allows me to approach
+                problems from multiple angles, blending logic with aesthetics to
+                build products that are both powerful and delightful.
+              </p>
               <p class="text-gray-400 leading-relaxed">
-                I have a deep passion for web development, front-end
-                applications, and UI/UX design. I believe that technology and
-                design should go hand-in-hand to create digital experiences that
-                are not only functional but also aesthetically pleasing. Through
-                my involvement in various organizations and projects, I have
-                developed strong teamwork, communication, and problem-solving
-                skills.
+                My experiences in collaborative projects and organizations have
+                taught me the value of communication and resilience. I thrive in
+                environments where I can learn from others, embrace challenges,
+                and contribute to building something meaningful.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Services Section -->
-      <section id="services" class="py-20 md:py-28">
+      <section class="bg-black py-20 md:py-28">
+        <div class="container mx-auto px-6">
+          <div class="max-w-2xl mx-auto text-center">
+            <p
+              class="text-sm font-semibold accent-color uppercase tracking-widest mb-4"
+              data-aos="fade-up"
+            >
+              My Motivation for this Journey
+            </p>
+
+            <h2
+              class="text-4xl md:text-5xl font-bold text-white leading-tight"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Why the Apple Developer Academy?
+            </h2>
+
+            <div
+              class="w-24 h-1 accent-bg mx-auto mt-6 mb-10"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            ></div>
+
+            <p
+              class="text-lg text-gray-300 leading-relaxed text-left md:text-justify"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              I am incredibly excited by the prospect of the 10-month immersive
+              learning journey at the Apple Developer Academy. For me, this is
+              more than a program; it's a unique opportunity to deepen my
+              understanding of design thinking, collaborative creation, and the
+              principles that power the world's most intuitive technologies. I
+              am eager to contribute my skills, learn from diverse peers, and be
+              mentored in an environment that champions excellence and
+              innovation. I am ready to dive in, challenge myself, and grow into
+              a creator who can build applications that truly make a difference.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="py-20 md:py-28 bg-[#191919]">
         <div class="container mx-auto px-6">
           <h2
             class="text-3xl md:text-4xl font-bold text-center mb-2 text-white"
@@ -220,20 +266,20 @@
         </div>
       </section>
 
-      <!-- Projects Section -->
-      <section id="projects" class="py-20 md:py-28 bg-[#191919]">
+      <section id="projects" class="py-20 md:py-28">
         <div class="container mx-auto px-6">
           <h2
             class="text-3xl md:text-4xl font-bold text-center mb-2 text-white"
           >
-            Portfolio
+            My Work & Process
           </h2>
-          <p class="text-center accent-color mb-16">My Recent Projects</p>
+          <p class="text-center accent-color mb-16">
+            A Glimpse into My Learning Journey
+          </p>
           <div
             id="project-list"
             class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            <!-- Eco-Hub Project Card -->
             <div
               class="card p-6 flex flex-col cursor-pointer"
               onclick="openProjectModal('ecohub-modal')"
@@ -248,12 +294,11 @@
                 <span
                   class="font-semibold accent-color hover:text-red-700 transition duration-300 inline-flex items-center"
                 >
-                  View Details
+                  Explore My Process
                   <i data-feather="arrow-right" class="w-4 h-4 ml-1"></i>
                 </span>
               </div>
             </div>
-            <!-- MonneCare Project Card -->
             <div
               class="card p-6 flex flex-col cursor-pointer"
               onclick="openProjectModal('monnecare-modal')"
@@ -269,12 +314,11 @@
                 <span
                   class="font-semibold accent-color hover:text-red-700 transition duration-300 inline-flex items-center"
                 >
-                  View Details
+                  Explore My Process
                   <i data-feather="arrow-right" class="w-4 h-4 ml-1"></i>
                 </span>
               </div>
             </div>
-            <!-- Projects from GitHub will be loaded here -->
           </div>
           <div class="text-center mt-12" data-aos="fade-up">
             <a
@@ -288,8 +332,7 @@
         </div>
       </section>
 
-      <!-- Certificates Section -->
-      <section id="certificates" class="py-20 md:py-28">
+      <section id="certificates" class="py-20 md:py-28 bg-[#191919]">
         <div class="container mx-auto px-6">
           <h2
             class="text-3xl md:text-4xl font-bold text-center mb-2 text-white"
@@ -351,15 +394,14 @@
         </div>
       </section>
 
-      <!-- Contact Section -->
-      <section id="contact" class="py-20 md:py-28 bg-[#191919]">
+      <section id="contact" class="py-20 md:py-28">
         <div class="container mx-auto px-6">
           <h2
             class="text-3xl md:text-4xl font-bold text-center mb-2 text-white"
           >
             Contact Me
           </h2>
-          <p class="text-center accent-color mb-16">Let's Get in Touch</p>
+          <p class="text-center accent-color mb-16">Let's Connect</p>
           <div class="max-w-3xl mx-auto">
             <form
               action="https://formspree.io/f/mrbajlzy"
@@ -429,7 +471,6 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-black py-6">
       <div class="container mx-auto px-6 text-center text-gray-500">
         <p>
@@ -469,7 +510,9 @@
           class="w-full rounded-lg shadow-lg mb-8"
         />
 
-        <h4 class="text-2xl font-semibold text-white mb-3">About</h4>
+        <h4 class="text-2xl font-semibold text-white mb-3">
+          About The Project
+        </h4>
         <p class="text-gray-400 mb-8 leading-relaxed">
           MonneCare is a digital pharmacy platform concept designed to provide
           easy access to healthcare. Users can search for medicines, consult
@@ -511,21 +554,17 @@
           />
         </div>
 
-        <h4 class="text-2xl font-semibold text-white mb-3">Technologies</h4>
-        <div class="flex flex-wrap gap-3 mb-8">
-          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
-            >HTML</span
-          >
-          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
-            >CSS</span
-          >
-          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
-            >JavaScript</span
-          >
-          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
-            >Figma</span
-          >
-        </div>
+        <h4 class="text-2xl font-semibold text-white mb-3">
+          My Journey & Learnings
+        </h4>
+        <p class="text-gray-400 mb-8 leading-relaxed">
+          The main challenge in this project was designing an interface that
+          felt trustworthy and simple for users who might be anxious about
+          health matters. This taught me the importance of user empathy in UI/UX
+          design. I learned to prioritize clarity over complexity, ensuring
+          every feature served a clear purpose, which reinforced my belief in a
+          human-centered design approach.
+        </p>
 
         <div class="space-y-4">
           <div>
@@ -575,7 +614,9 @@
           class="w-full rounded-lg shadow-lg mb-8"
         />
 
-        <h4 class="text-2xl font-semibold text-white mb-3">About</h4>
+        <h4 class="text-2xl font-semibold text-white mb-3">
+          About The Project
+        </h4>
         <p class="text-gray-400 mb-8 leading-relaxed">
           Eco-Hub is an innovative platform that connects you with waste banks,
           providing incentives and creating a sustainable recycling ecosystem.
@@ -616,21 +657,17 @@
           />
         </div>
 
-        <h4 class="text-2xl font-semibold text-white mb-3">Technologies</h4>
-        <div class="flex flex-wrap gap-3 mb-8">
-          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
-            >HTML</span
-          >
-          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
-            >CSS</span
-          >
-          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
-            >JavaScript</span
-          >
-          <span class="bg-[#2a2a2a] text-gray-300 px-4 py-1 rounded-md text-sm"
-            >Figma</span
-          >
-        </div>
+        <h4 class="text-2xl font-semibold text-white mb-3">
+          My Journey & Learnings
+        </h4>
+        <p class="text-gray-400 mb-8 leading-relaxed">
+          For Eco-Hub, the goal was to motivate users towards a sustainable
+          habit. The challenge was not just technical, but psychological. I
+          explored how gamification and a clear rewards system could drive user
+          engagement. This project was a lesson in interdisciplinary thinking,
+          connecting software engineering with behavioral psychology to build a
+          product that encourages positive change.
+        </p>
 
         <div class="space-y-4">
           <div>
@@ -657,7 +694,6 @@
       </div>
     </div>
 
-    <!-- Custom JS -->
     <script src="script.js"></script>
   </body>
 </html>
